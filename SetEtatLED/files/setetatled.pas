@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: KEYBOARD I/O ROUTINES
+  Original name: 0117.PAS
+  Description: Set the LED (Num
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Set the LED (NumLock, CapsLock, ...) on or off
@@ -11,8 +19,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

@@ -1,13 +1,18 @@
-# ExeSize
-
-> Change the cursor aspect in text mode
->
-> [http://www.retroarchive.org/swag/CURSOR/0031.PAS.html](http://www.retroarchive.org/swag/CURSOR/0031.PAS.html)
+# Return the size of the exe file
 
 ```pascal
+(*
+  Category: SWAG Title: EXECUTION ROUTINES
+  Original name: 0051.PAS
+  Description: Return the size of the exe file
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
-   Change the cursor aspect in text mode
+   Returns the size of the executable: not the size of the file but
+   the size of the EXE by consulting the header of the executable
 
 
                ╔════════════════════════════════════════╗
@@ -18,47 +23,42 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
 
 }
 
-Type
-   CursorType = (cNormal, cInsert);
+Function  ExeSize (sFile : String) : LongInt;
 
-PROCEDURE Set_Cursor (cType : CursorType); ASSEMBLER;
-
-ASM
-
-    Cmp  cType, cNormal
-    Je   @Normal
-
-    Mov  Ah, 01h
-    Mov  Cl, 15h
-    Mov  Ch, 01h
-
-    Jmp  @Call
-
-@Normal:
-
-    Mov  Ah, 01h
-    Mov  Cx, 0607h
-
-@Call:
-
-    Int  10h
-
-END;
+Var ImageInfo : Record
+        ExeID     : Array[ 0..1 ] of Char;
+        Remainder : Word;
+        Size      : Word
+     end;
+     FichS    : File;
 
 Begin
 
-   { Set the cursor normal }
+  Assign (FichS, sFile);
+  FileMode := 0;
+  Reset (FichS, 1);
 
-   Set_Cursor (cNormal);
+  If Ioresult <> 0 Then
+     ExeSize := 0
+  Else
+     Begin
 
-   { Set the cursor like a square -like used in an insert mode- }
+        { Get the EXE header }
 
-   Set_Cursor (cInsert);
+        BlockRead (FichS, ImageInfo, Sizeof (ImageInfo));
+
+        { Check the two first bytes: should be MZ for a DOS executable. }
+
+        If ImageInfo.ExeID <> 'MZ' Then
+           ExeSize := 0
+        Else
+           ExeSize := LongInt (ImageInfo.size-1) Shl 9 + ImageInfo.Remainder;
+     End;
 
 End;
 ```

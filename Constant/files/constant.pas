@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: EXECUTION ROUTINES
+  Original name: 0049.PAS
+  Description: Change constants in EXE files
+  Author: AVONTURE CHRISTOPHE
+  Date: 11-29-96  08:17
+*)
+
 {
 
    The purpose of this program is to extract show how we can put a constant
@@ -22,8 +30,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

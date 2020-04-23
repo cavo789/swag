@@ -1,4 +1,4 @@
-&þ
+&■
  -System box
   &About
  -Show general informations about this program
@@ -16,7 +16,7 @@
  -Save the current file under a different name
   Save a&ll
  -Save all modified files
-  Ä
+  ─
   &Change dir...
  -Choose a new default directory
   &Print
@@ -33,7 +33,7 @@
  -Undo the previous editor operation
   &Redo
  -Redo the previous editor operation
-  Ä
+  ─
   Cu&t
  -Remove the selected text and put in into the clipboard
   &Copy
@@ -42,7 +42,7 @@
  -Insert selected text from the clipboard at the cursor position
   C&lear
  -Delete the selected text
-  Ä
+  ─
   &Show clipboard
  -Open the clipboard window
 &Search
@@ -53,7 +53,7 @@
  -Search for text and replace it with new text
   &Search again
  -Repeat the last Find or Replace command
-  Ä
+  ─
   &Go to line number...
  -Move the cursor to a specified line number
   S&how last compile error
@@ -84,14 +84,14 @@
  -Rebuild source file and all other files that have been modified
   &Build
  -Rebuild source file and all other files
-  Ä
+  ─
   &Destination Memory
  -Specify wheter source file is compiled to memory or disk
   &Primary file...
  -Define the file that is the focus of Make or Build
   C&lear primary file
  -Clear the file previously set with Primary file
-  Ä
+  ─
   &Information...
  -Show status information
 &Debug
@@ -108,7 +108,7 @@
  -Open the Output window
   &User screen
  -Swithc to the full-screen user output
-  Ä
+  ─
   &Evaluate/Modify...
  -Evaluate a variable or expression and display or modify the value
   &Add watch...
@@ -123,7 +123,7 @@
  -Go to the next source position
   &Go to previous
  -Go to the previous source position
-  Ä
+  ─
   &Grep
  -User installed tool
 &Options
@@ -140,10 +140,10 @@
  -Set path for units, inlude files, OBJs, and generated files
   &Tools...
  -Create or change tools
-  Ä
+  ─
   &Environment
  -Specify environment settings
-  Ä
+  ─
   &Open...
  -Load options previously create with Save Options
   &Save
@@ -160,7 +160,7 @@
  -Close all windows on desktop
   &Refresh display
  -Redraw the screen
-  Ä
+  ─
   &Size/Move
  -Change the size or position of the active window
   &Zoom
@@ -171,7 +171,7 @@
  -Make the previous window active
   &Close
  -Close the active window
-  Ä
+  ─
   &List...
  -Show a list of all open windows
 &Help
@@ -180,7 +180,7 @@
  -Show table of contents for online help
   &Index
  -Show index for online help
-  Ä
+  ─
   &Topic search
  -Display help on the word at the cursor
   &Previous topic
@@ -189,7 +189,7 @@
  -How to use online help
   &Files...
  -Add or delete installated help files
-  Ä
+  ─
   Compiler &directives
  -Display help above the compiler directives
   &Reserved word
@@ -200,6 +200,6 @@
  -Display help about Turbo Pascal language
   &Error messages
  -Display help about the error messages
-  Ä
+  ─
   &About...
  -Show version and copyright information

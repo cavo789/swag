@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: MENU MANAGEMENT ROUTINES
+  Original name: 0017.PAS
+  Description: Vertical Menu Unit
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Vertical menu unit.
@@ -13,8 +21,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 
     This is one of my very best unit.  Please send me a postcard if you find
@@ -35,7 +43,7 @@ Uses Crt;
 Type TCadre     = Array [1..8] of Char;
 
 Const Choixxx   : Byte = 0;
-      Double    : Tcadre = ('É','Í','»','║','║','È','Í','¼'); { Cadre }
+      Double    : Tcadre = ('╔','═','╗','║','║','╚','═','╝'); { Cadre }
 
 Var TMenu, TMenu2 : Array [1..25,1..2] of string[80];
 
@@ -259,4 +267,3 @@ Begin
    FillChar (sBlankLine[1], 80, ' ');
    sBlankLine[0] := #80;
 End.
-

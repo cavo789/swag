@@ -1,10 +1,16 @@
-# Constant
+# Change constants in EXE files
 
 > The purpose of this program is to extract show how we can put a constant into our program and then, when the program is running, modify this constant in  the EXE file. So, on the next run, the constant will be modified.
->
-> [http://www.retroarchive.org/swag/EXEC/0049.PAS.html](http://www.retroarchive.org/swag/EXEC/0049.PAS.html)
 
 ```pascal
+(*
+  Category: SWAG Title: EXECUTION ROUTINES
+  Original name: 0049.PAS
+  Description: Change constants in EXE files
+  Author: AVONTURE CHRISTOPHE
+  Date: 11-29-96  08:17
+*)
+
 {
 
    The purpose of this program is to extract show how we can put a constant
@@ -29,8 +35,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
 
 }
 

@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: Borland DELPHI
+  Original name: 0206.PAS
+  Description: Components: NewSpeedbutton
+  Author: AVONTURE CHRISTOPHE
+  Date: 11-29-96  08:17
+*)
+
 {
   DELPHI 1.0
 
@@ -37,8 +45,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 
 }

@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: EXECUTION ROUTINES
+  Original name: 0048.PAS
+  Description: Display all info in EXE header
+  Author: AVONTURE CHRISTOPHE
+  Date: 11-29-96  08:17
+*)
+
 {
                  =======================================
 
@@ -21,8 +29,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 
 }
@@ -75,21 +83,21 @@ Begin
           Close (Fich);
           ClrScr;
           Writeln ('');
-          Writeln ('þ AVC Software, Inc.                         (c) Octobre 1994');
-          Writeln ('þ Exe-Head');
+          Writeln ('■ AVC Software, Inc.                         (c) Octobre 1994');
+          Writeln ('■ Exe-Head');
           WriteLn ('');
           If (Chr(Header[0]) = 'M') and (Chr(Header[1]) = 'Z') then Begin
             WriteLn ('Signature du fichier                        : ',Chr(Header[0]),Chr(Header[1]));
             WriteLn ('');
-            WriteLn ('Taille de la derniï¿½re page                  : ' ,Word2Hex((Header[3] shl 8) + Header[2]),'h');
+            WriteLn ('Taille de la dernière page                  : ' ,Word2Hex((Header[3] shl 8) + Header[2]),'h');
             WriteLn ('Nombres de pages                            : ' ,Word2Hex((Header[5] shl 8) + Header[4]),'h');
-            WriteLn ('Entrï¿½es de la table de relocalisation       : ' ,Word2Hex((Header[7] shl 8) + Header[6]),'h');
-            WriteLn ('Paragraphes de l''en-tï¿½te                    : ',Word2Hex((Header[9] shl 8) + Header[8]),'h');
+            WriteLn ('Entrées de la table de relocalisation       : ' ,Word2Hex((Header[7] shl 8) + Header[6]),'h');
+            WriteLn ('Paragraphes de l''en-tête                    : ',Word2Hex((Header[9] shl 8) + Header[8]),'h');
             WriteLn ('MINALLOC                                    : ' ,Word2Hex((Header[11] shl 8) + Header[10]),'h');
             WriteLn ('MAXALLOC                                    : ' ,Word2Hex((Header[13] shl 8) + Header[12]),'h');
             WriteLn ('ss initial                                  : ' ,Word2Hex((Header[15] shl 8) + Header[14]),'h');
             WriteLn ('sp initial                                  : ' ,Word2Hex((Header[17] shl 8) + Header[16]),'h');
-            WriteLn ('Total de contrï¿½le                           : ' ,Word2Hex((Header[19] shl 8) + Header[18]),'h');
+            WriteLn ('Total de contrôle                           : ' ,Word2Hex((Header[19] shl 8) + Header[18]),'h');
             WriteLn ('ip initial                                  : ' ,Word2Hex((Header[21] shl 8) + Header[20]),'h');
             WriteLn ('cs initial                                  : ' ,Word2Hex((Header[23] shl 8) + Header[22]),'h');
             WriteLn ('Offset de la table de relocalisation        : ' ,Word2Hex((Header[25] shl 8) + Header[24]),'h');

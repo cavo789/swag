@@ -1,4 +1,4 @@
-# ConvertHex
+# Convert Word 2 Hex
 
 > Two functions: the first convert a Word value in its equivalent in hexa and put the  result into  a string.  The  second is  for a  Byte value
 >

@@ -5,6 +5,14 @@
 > [http://www.retroarchive.org/swag/NETWORK/0046.PAS.html](http://www.retroarchive.org/swag/NETWORK/0046.PAS.html)
 
 ```pascal
+(*
+  Category: SWAG Title: NOVELL/LANTASTIC NETWORK ROUTINES
+  Original name: 0046.PAS
+  Description: Functions to handle BANYAN Network
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Unit provided with some functions to handle a BANYAN network.
@@ -20,8 +28,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
 
 }
 
@@ -165,11 +173,11 @@ BEGIN
     ELSE
        BEGIN
 
-          User.Sub_Function := #0005;
+          User.Sub_Function := $0005;
 
           WITH REG DO
              BEGIN
-               AX := #0004;
+               AX := $0004;
                DX := Ofs (User);
                DS := Seg (User);
              END;
@@ -206,9 +214,9 @@ BEGIN
 
    IF NOT bBANYAN_Installed THEN Exit;
 
-   User.Sub_Function := #012C;  { #0064 : Organization }
-                                { #00C8 : Group        }
-                                { #012C : Item         }
+   User.Sub_Function := $012C;  { $0064 : Organization }
+                                { $00C8 : Group        }
+                                { $012C : Item         }
 
    { Pointers initialization }
 
@@ -222,8 +230,8 @@ BEGIN
 
    WITH REG DO
       BEGIN
-        AX := #0007;
-        BX := #0007;
+        AX := $0007;
+        BX := $0007;
         DX := Ofs (User);
         DS := Seg (User);
       END;
@@ -277,11 +285,11 @@ BEGIN
     S^:= UserName;
     S^[64] := #0;
 
-    User.Sub_Function := #0004;
+    User.Sub_Function := $0004;
 
     WITH REG DO
        BEGIN
-         AX := #0004;
+         AX := $0004;
          DX := Ofs (User);
          DS := Seg (User);
        END;
@@ -298,14 +306,14 @@ BEGIN
 
     IF NOT bBANYAN_Installed THEN Exit;
 
-    Session.Sub_Function     := #12;
+    Session.Sub_Function     := $12;
     Session.Ofs_Connect_Info := Ofs(Connect);
     Connect.pService_Name    := @Service;
     Connect.pConnection_Name := @Connection;
 
     WITH REG DO
        BEGIN
-         AX := #0003;
+         AX := $0003;
          BX := Ofs (Session);
          DS := Seg (Session);
        END;
@@ -326,8 +334,8 @@ BEGIN
 
    WITH REG DO
       BEGIN
-         AX := #0008;
-         BX := #0002;
+         AX := $0008;
+         BX := $0002;
          CX := 2;
          DX := Ofs (Msg);
          DS := Seg (Msg);
@@ -345,11 +353,11 @@ BEGIN
 
    IF NOT bBANYAN_Installed THEN Exit;
 
-   Logout.Sub_Function := #000c;
+   Logout.Sub_Function := $000c;
 
    WITH REG DO
       BEGIN
-         AX := #0004;
+         AX := $0004;
          DX := Ofs (Logout);
          DS := Seg (Logout);
       END;
@@ -373,8 +381,8 @@ END.
 { -------------------------- cut here ------------------------------------ }
 { First Sample program }
 
-{#A+,B-,D-,E-,F-,G+,I-,L-,N+,O-,P-,Q-,R-,S-,T-,V+,X+}
-{#M 4000,0,8000}
+{$A+,B-,D-,E-,F-,G+,I-,L-,N+,O-,P-,Q-,R-,S-,T-,V+,X+}
+{$M 4000,0,8000}
 
 USES
    Banyan;
@@ -411,7 +419,7 @@ BEGIN
        Mov  PSP_Seg, Bx           { And Save it }
     End;
 
-    pS := ptr (PSP_Seg, #80);    { Parameters are in PSP_SEG:80h }
+    pS := ptr (PSP_Seg, $80);    { Parameters are in PSP_SEG:80h }
 
     sParam := pS^;
     Delete (sParam, 1, 1);

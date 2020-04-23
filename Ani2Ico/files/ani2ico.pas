@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: Borland DELPHI
+  Original name: 0205.PAS
+  Description: Extract WIN95 animated Cursors
+  Author: AVONTURE CHRISTOPHE
+  Date: 11-29-96  08:17
+*)
+
 {
                   =======================================
 
@@ -42,8 +50,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 
@@ -194,7 +202,7 @@ begin
     WriteLn ('');
     WriteLn ('');
     WriteLn ('');
-    WriteLn ('þ File : '+ParamStr(1));
+    WriteLn ('■ File : '+ParamStr(1));
     TextAttr := 11;
     WriteLn ('');
     WriteLn ('');
@@ -257,16 +265,16 @@ begin
      ClrScr;
      TextAttr := 30;
      WriteLn('');
-     WriteLn('ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿');
-     WriteLn('³ Ani2Ico : Extraction utility from Christophe AVONTURE                ³');
-     WriteLn('ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ');
+     WriteLn('┌──────────────────────────────────────────────────────────────────────┐');
+     WriteLn('│ Ani2Ico : Extraction utility from Christophe AVONTURE                │');
+     WriteLn('└──────────────────────────────────────────────────────────────────────┘');
      WriteLn('');
      WriteLn('');
      TextAttr := 7;
 
      If Not (ParamCount = 1) then Begin
         TextAttr := 14;
-        WriteLn('þ PURPOSE');
+        WriteLn('■ PURPOSE');
         TextAttr := 11;
         WriteLn('');
         WriteLn('  Ani2Ico program  will allowed you to  extract all cursors pictures  from');
@@ -280,7 +288,7 @@ begin
         ClrScrWin (1,6,79,24);
         GotoXy (1,6);
         TextAttr := 14;
-        WriteLn('þ UTILISATION');
+        WriteLn('■ UTILISATION');
         TextAttr := 11;
         WriteLn('');
         WriteLn('');
@@ -300,7 +308,7 @@ begin
         ClrScrWin (1,6,79,24);
         GotoXy (1,6);
         TextAttr := 14;
-        WriteLn('þ IN THE FUTURE');
+        WriteLn('■ IN THE FUTURE');
         TextAttr := 11;
         WriteLn('');
         WriteLn('  Actually, I''m developping a Delphi component for  Delphi 1.0  and Delphi');
@@ -321,7 +329,7 @@ begin
         ClrScrWin (1,6,79,23);
         GotoXy (1,6);
         TextAttr := 14;
-        WriteLn('þ REGISTRATION');
+        WriteLn('■ REGISTRATION');
         TextAttr := 11;
         WriteLn('');
         WriteLn('  This program is free. ');

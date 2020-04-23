@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: BITWISE TRANSLATIONS ROUTINES
+  Original name: 0084.PAS
+  Description: Setting Bits/Swap Bytes
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Swap a byte: the bit 0 will become the bit 7 of the new byte
@@ -16,8 +24,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

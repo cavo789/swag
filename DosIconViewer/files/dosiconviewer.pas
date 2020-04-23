@@ -1,3 +1,11 @@
+(*
+  Category: SWAG Title: GRAPHICS ROUTINES
+  Original name: 0252.PAS
+  Description: Dos Icon Viewer
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Dos icon viewer
@@ -11,8 +19,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 
@@ -64,7 +72,7 @@ Begin
        BEGIN
           BlockRead (fIcon, Color, 1);
           Icon^[I shl 1]       := Color Shr 4;
-          Icon^[(I shl 1) + 1] := Color And 0F;
+          Icon^[(I shl 1) + 1] := Color And $0F;
        END;
 
    Close (fIcon);

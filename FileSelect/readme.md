@@ -1,10 +1,16 @@
 # File select menu
 
-> File select menu unit.  Something like a FileListBox unit.
->
-> [http://www.retroarchive.org/swag/FILES/0101.PAS.html](http://www.retroarchive.org/swag/FILES/0101.PAS.html)
+> File select menu unit. Something like a FileListBox unit.
 
 ```pascal
+(*
+  Category: SWAG Title: FILE HANDLING ROUTINES
+  Original name: 0101.PAS
+  Description: File Select Menu
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    File select menu unit.  Something like a FileListBox unit.
@@ -31,8 +37,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 
     This is one of my very best unit.  Please send me a postcard if you find
@@ -74,7 +80,7 @@ Uses Crt, Dos;
 
 Type TCadre     = Array [1..8] of Char;
 
-Const Double    : Tcadre = ('É','Í','»','║','║','È','Í','¼');
+Const Double    : Tcadre = ('╔','═','╗','║','║','╚','═','╝');
       MaxFich = 1024;                       { Max number of displayed file }
 
 Var NbrFich : Byte;                                 { File number per line }
@@ -727,8 +733,8 @@ End.
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

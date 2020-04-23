@@ -1,7 +1,16 @@
+(*
+  Category: SWAG Title: EXECUTION ROUTINES
+  Original name: 0051.PAS
+  Description: Return the size of the exe file
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Returns the size of the executable: not the size of the file but
    the size of the EXE by consulting the header of the executable
+
 
                ╔════════════════════════════════════════╗
                ║                                        ║░
@@ -11,8 +20,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

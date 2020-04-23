@@ -1,11 +1,16 @@
-# ExeSize
-
-> Change the cursor aspect in text mode
->
-> [http://www.retroarchive.org/swag/CURSOR/0031.PAS.html](http://www.retroarchive.org/swag/CURSOR/0031.PAS.html)
+# Change the cursor aspect in text mode
 
 ```pascal
+(*
+  Category: SWAG Title: CURSOR HANDLING ROUTINES
+  Original name: 0031.PAS
+  Description: Change the cursor aspect in textmode
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
+
    Change the cursor aspect in text mode
 
 
@@ -17,8 +22,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

@@ -1,10 +1,14 @@
-# Flush keyboard
-
-> Removes all characters present in the buffer
->
-> [http://www.retroarchive.org/swag/KEYBOARD/0116.PAS.html](http://www.retroarchive.org/swag/KEYBOARD/0116.PAS.html)
+# Removes all characters present in the buffer
 
 ```pascal
+(*
+  Category: SWAG Title: KEYBOARD I/O ROUTINES
+  Original name: 0116.PAS
+  Description: Remove all chars in keyboard buffer
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Flush the keyboard: removes all characters present in the buffer
@@ -18,8 +22,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 

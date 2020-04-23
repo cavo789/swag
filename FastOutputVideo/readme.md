@@ -1,10 +1,16 @@
-# Fast Output Video
-
-> Very fast screen output in 80*25 mode by direct access to video memory
+# Very fast screen output in 80*25 mode by direct access to video memory
 >
 > [http://www.retroarchive.org/swag/SCREEN/0106.PAS.html](http://www.retroarchive.org/swag/SCREEN/0106.PAS.html)
 
 ```pascal
+(*
+  Category: SWAG Title: SCREEN HANDLING ROUTINES
+  Original name: 0106.PAS
+  Description: Fast Video Output to memory
+  Author: AVONTURE CHRISTOPHE
+  Date: 03-04-97  13:18
+*)
+
 {
 
    Very fast screen output in 80*25 mode by direct access to video memory
@@ -18,8 +24,8 @@
                ║           B-1080 BRUXELLES             ║░
                ║              BELGIQUE                  ║░
                ║                                        ║░
+               ╚════════════════════════════════════════╝░
                ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-               
 
 }
 
@@ -90,7 +96,7 @@ End;
 
 Procedure WriteStrXY (X, Y, TAttr, TBack : Word; Text : String);
 
-{ Ecrit sur la page spï¿½cifiï¿½e, le texte donnï¿½}
+{ Ecrit sur la page spécifiée, le texte donné}
 
 Var Offset   : Word;
     I        : Byte;
