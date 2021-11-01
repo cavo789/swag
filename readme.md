@@ -1,6 +1,6 @@
 # SWAG - Old scripts written between 1995-1996
 
-![Banner](./image/banner.png)
+![Banner](./banner.svg)
 
 Some source code from the time when I was studying computer science and already spent a good part of my evenings and weekends behind the computer.
 
